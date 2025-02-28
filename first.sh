@@ -70,7 +70,7 @@ log "Installation completed successfully"
 
 # Prompt for reboot
 read -p "Kernel installed. A reboot is required. Do you want to reboot now? (y/n): " reboot_now
-if [[ "$reboot_now" == "y" || "$reboot_now" == "Y" ]]; then
+if [ "$reboot_now" = "y" ] || [ "$reboot_now" = "Y" ]; then
     log "Rebooting system"
     sudo reboot
 else
